@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Today’s Tasks</h1>
+
+      <form id="todo-form" class="row" novalidate>
+        <label for="todo-input" class="sr-only">Task title</label>
+        <input
+          id="todo-input"
+          name="title"
+          type="text"
+          placeholder="e.g. 30-minute study"
+          autocomplete="off"
+        />
+        <button id="add-btn" type="submit">Add</button>
+      </form>
+
+      <p id="error" class="error" aria-live="polite" hidden >
+        Title cannot be empty.
+      </p>
+
+      <ul id="todo-list" class="list" role="list">
+         <li>Test Task 1</li>
+         <li>Test Task 2</li>
+         <li>Test Task 3</li>
+      </ul>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
