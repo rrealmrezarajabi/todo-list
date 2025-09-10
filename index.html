@@ -11,7 +11,6 @@
       <h1>Today’s Tasks</h1>
 
       <form id="todo-form" class="row" novalidate>
-        <label for="todo-input" class="sr-only">Task title</label>
         <input
           id="todo-input"
           name="title"
@@ -22,15 +21,11 @@
         <button id="add-btn" type="submit">Add</button>
       </form>
 
-      <p id="error" class="error" aria-live="polite" hidden >
+      <p id="error" class="error" aria-live="polite" hidden>
         Title cannot be empty.
       </p>
 
-      <ul id="todo-list" class="list" role="list">
-         <li>Test Task 1</li>
-         <li>Test Task 2</li>
-         <li>Test Task 3</li>
-      </ul>
+      <ul id="todo-list" class="list" role="list"></ul>
     </main>
 
     <script src="./app.js"></script>
